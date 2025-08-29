@@ -10,12 +10,12 @@ public class conditionalhallenge {
         // Part 1: Temperature Converter
         System.out.println("--- Part 1: Temperature Converter ---");
         if (isCold = true) {
-            System.out.println("isCold" + isCold);
+            System.out.println("isCold: " + isCold);
             double NewTemperature = 5;
             System.out.println("New Temperature: " + NewTemperature);
         }
         // Part 2: Grade Calculator
-        System.out.println("--- Part 2: Grade ---");
+        System.out.println("--- Part 2: Grade Checker ---");
         int Score = 90;
         System.out.println("Score: " + Score);
         if (Score >= 70); {
@@ -24,6 +24,7 @@ public class conditionalhallenge {
 
         
         // Part 3
+        System.out.println("--- Part 3: Season Determiner ---");
         int SeasonTemperature = 45;
         if (SeasonTemperature < 59 || SeasonTemperature > 40); {
             System.out.println("Fall.");
@@ -32,6 +33,7 @@ public class conditionalhallenge {
 
         
         // Part 4
+        System.out.println("--- Part 4: Number Classifier ---");
         int Number = 34;
         if (Number > 0 || Number < 100)
         System.out.println("Positive.");
