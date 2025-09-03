@@ -19,7 +19,7 @@ public class ConditionalChallenge {
         int Score = 90;
         System.out.println("Score: " + Score);
         if (Score >= 70); {
-        System.out.println("Passed");
+            System.out.println("Passed");
         }
 
         
@@ -36,6 +36,6 @@ public class ConditionalChallenge {
         System.out.println("--- Part 4: Number Classifier ---");
         int Number = 34;
         if (Number > 0 || Number < 100)
-        System.out.println("Positive.");
+            System.out.println("Positive.");
     }
 }
