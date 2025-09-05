@@ -23,8 +23,13 @@ public class Zombie {
         System.out.println(charlie.growl());
         charlie.humansConsumed();
         System.out.println("Charlie ate " + charlie.humansConsumed() + "humans.");
-    }
 
+        System.out.println(nick.humansConsumed());
+        charlie.eatHuman();
+        System.out.println(charlie.humansConsumed());
+
+
+    }
     //METHODS
     //walk with arms out
     // eat brains
@@ -40,4 +45,11 @@ public class Zombie {
         return humansEaten;
     }
 
+    public void eatHuman(){
+        humansEaten ++;
+    }
+
+    public void feast(int humanCount){
+        humansConsumed += humanCount;
+    }
 }
