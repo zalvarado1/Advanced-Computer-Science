@@ -92,8 +92,14 @@ public class Dog {
         return output;
     }
 
+    // dog char, dog tag, still in facility
+
     public boolean equals(Dog other) {
-        if (name.equal 
+        if (this.name.equals(other.name) && this.age == other.age && this.ownerName.equals(ownerName) && this.dogId == other.dogId
+         && this.dogChar == other.dogChar && this.dogTag.equals(other.dogTag) && this.stillInFacility == other.stillInFacility) {
+            return true;
+        }
+        return false;
     
 
 
