@@ -1,3 +1,5 @@
+
+
 public class Dog {
     private String name;
     private String ownerName;
@@ -13,12 +15,13 @@ public class Dog {
         this.age = age;
         this.dogId = dogId;
 
+
     }
 
     public Dog(){
         this.name = "Nick";
         this.ownerName = "Zayra";
-        this.age = 12;
+        this.age = 15;
         this.dogId = 453;
         
     }
@@ -80,7 +83,7 @@ public class Dog {
     }
 
     public String toString() {
-        String output = name + " is a good dog. They are " + age + " years old and belong to Sandra.";
+        String output = name + " is a good dog. They are " + age + " years old and belong to " + ownerName + ".";
         if(!stillInFacility) {
             output += " They are not currently in our facility. ";
         }
@@ -99,9 +102,24 @@ public class Dog {
          && this.dogChar == other.dogChar && this.dogTag.equals(other.dogTag) && this.stillInFacility == other.stillInFacility) {
             return true;
         }
-        return false;
+        return false; }
     
+        // Returns a string that concatenates (combines) the values of `dogId` and `dogChar`.
+        
+        public String generateDogTag() {
 
+            String output = "Dog ID: " + dogId + " Dog Char: " + dogChar;
+            return output;
+        }
+
+        public char generateDogChar() {
+        int firstInt = dogId % 10;
+        int secondInt = firstInt % 10;
+        int thirdInt = secondInt % 10;
+        char dogChar = (char) ('F' + ((firstInt + secondInt + thirdInt) % 10));
+        return dogChar;
+        
+        }
 
 
 }
